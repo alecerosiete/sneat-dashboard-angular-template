@@ -6,7 +6,7 @@
 
 (function () {
   let cardColor, headingColor, axisColor, shadeColor, borderColor;
-  console.log("Dashboard analytics started..")
+
   cardColor = config.colors.white;
   headingColor = config.colors.headingColor;
   axisColor = config.colors.axisColor;
@@ -271,12 +271,7 @@
     };
   if (typeof totalRevenueChartEl !== undefined && totalRevenueChartEl !== null) {
     const totalRevenueChart = new ApexCharts(totalRevenueChartEl, totalRevenueChartOptions);
-    console.log("apex render..")
     totalRevenueChart.render();
-  }else{
-    console.log("apex params null..")
-    console.log(totalRevenueChartEl)
-    console.log(totalRevenueChartOptions)
   }
 
   // Growth Chart - Radial Bar Chart
